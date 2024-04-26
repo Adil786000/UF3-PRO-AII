@@ -27,22 +27,27 @@ public class PacMan {
     }
 
     public  void move(int newPosX, int newPosY) {
+        this.posX = newPosX;
+        this.posY = newPosY;
     
     }
 
     public void  pickupBola() {
+        this.score += 10;
 
     }
 
     public void  pickupBolaEspecial() {
-
+        this.score += 50;
     }   
 
-    public void  pickupFruit(){
+    public void  pickupFruit() {
+        this.score += 20;
 
     }  
 
     public void  loseLife() {
+        this.lives--;
     
     }
     public boolean detectCollitionGhost(Fantasma fantasma) {
@@ -50,5 +55,5 @@ public class PacMan {
      }
     }
 
-
+    
 
