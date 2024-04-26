@@ -37,3 +37,7 @@ public class PacMan {
     public void  pickupBolaEspecial() {
 
     }   
+
+    public void  pickupFruit(){
+
+    }  
