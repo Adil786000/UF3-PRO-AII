@@ -33,3 +33,7 @@ public class PacMan {
     public void  pickupBola() {
 
     }
+
+    public void  pickupBolaEspecial() {
+
+    }   
