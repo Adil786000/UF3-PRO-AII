@@ -41,3 +41,8 @@ public class PacMan {
     public void  pickupFruit(){
 
     }  
+
+    public void  loseLife() {
+    
+    }
+    
