@@ -26,4 +26,10 @@ public class PacMan {
         this.lives = 3;
     }
 
-    public  void move(int newPosX, int newPosY){
+    public  void move(int newPosX, int newPosY) {
+    
+    }
+
+    public void  pickupBola() {
+
+    }
