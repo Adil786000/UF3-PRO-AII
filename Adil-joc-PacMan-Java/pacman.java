@@ -25,3 +25,5 @@ public class PacMan {
         this.score = 0;
         this.lives = 3;
     }
+
+    public  void move(int newPosX, int newPosY){
