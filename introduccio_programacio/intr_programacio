@@ -1,0 +1,80 @@
+public class Estudiant {
+    private String nom;
+    private int edat;
+    private String curs;
+
+    public Estudiant(String nom, int edat, String curs) {
+        this.nom = nom;
+        this.edat = edat;
+        this.curs = curs;
+    }
+
+
+    public String obtenirNom() {
+        return nom;
+    }
+
+    public int obtenirEdat() {
+        return edat;
+    }
+
+    public String obtenirCurs() {
+        return curs;
+    }
+
+    public void establirNom(String nouNom) {
+        this.nom = nouNom;
+    }
+
+    public void establirEdat(int novaEdat) {
+        this.edat = novaEdat;
+    }
+
+    public void establirCurs(String nouCurs) {
+        this.curs = nouCurs;
+    }
+}
+
+public class Cercle {
+    private double radi;
+
+    public Cercle(double radi) {
+        this.radi = radi;
+    }
+
+    public double calcularArea() {
+        return Math.PI * (radi * radi);
+    }
+
+    public double calcularPerimetre() {
+        return 2 * Math.PI * radi;
+    }
+}
+
+public class Tasca {
+    private String descripcio;
+    private String estat;
+
+    public Tasca(String descripcio, String estat) {
+        this.descripcio = descripcio;
+        this.estat = estat;
+    }
+}
+
+public class GestorTasques {
+    private List<Tasca> llistaTasques;
+
+    public GestorTasques() {
+        llistaTasques = new ArrayList<>();
+    }
+
+    public void afegirTasca(Tasca tasca) {
+        llistaTasques.add(tasca);
+    }
+
+    public void eliminarTasca(Tasca tasca) {
+        llistaTasques.remove(tasca);
+    }
+}
+
+
