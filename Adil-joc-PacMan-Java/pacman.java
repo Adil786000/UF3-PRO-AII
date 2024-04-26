@@ -18,5 +18,10 @@ public class PacMan {
     private int score;
     private int lives;
 
-    
-    public PacMan() {
+
+    public PacMan(int initialPosX, int initialPosY) {
+        this.posX = initialPosX;
+        this.posY = initialPosY;
+        this.score = 0;
+        this.lives = 3;
+    }
