@@ -10,4 +10,13 @@
             - pickupFruita(): Recollita una fruita i augmenta la puntuació.
             - loseLife(): Disminueix una vida quan Pac-Man és capturat per un fantasma.
             - detectColisionFantasma(Fantasma fantasma): Verifica si Pac-Man col·lisiona amb un fantasma.*/
-            
+
+        
+public class PacMan {
+    private int posX;
+    private int posY;
+    private int score;
+    private int lives;
+
+    
+    public PacMan() {
