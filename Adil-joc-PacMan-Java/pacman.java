@@ -45,4 +45,10 @@ public class PacMan {
     public void  loseLife() {
     
     }
-    
+    public boolean detectCollitionGhost(Fantasma fantasma) {
+        return false;
+     }
+    }
+
+
+
