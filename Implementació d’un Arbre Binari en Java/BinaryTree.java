@@ -1,25 +1,31 @@
 public class BinaryTree {
-
-  private static int instances = 0;
-  private Node root;
-  private int depth;
-
-  public BinaryTree(int depth){
-    instances++;
-    this.depth = depth;
-  }
-
-  public static int getinstances(){
-    return instances;
-  }
-
-
-  public void createintTree(){
-    this.root = new Node(1);
-    Node current = this.root;
-    for (int i = 2; i <= this.depth; i++){
-        current.right = new Node(i);
-        current = current.right;
-  }
-
-}
+    
+    private static int instancias = 0;
+    private Node raiz;
+    private int profundidad;
+    
+    public BinaryTree(int profundidad) {
+        instancias++;
+        this.profundidad = profundidad;
+    }
+    
+    public static int getInstancias() {
+        return instancias;
+    }
+    
+    public void crearArbolEnteros() {
+        this.raiz = new Nodo(1);
+        Nodo actual = this.raiz;
+        for (int i = 2; i <= this.profundidad; i++) {
+            actual.derecha = new Nodo(i);
+            actual = actual.derecha;
+        }
+    }
+    
+    public void crearArbolCaracteres() {
+        this.raiz = new Nodo('A');
+        Nodo actual = this.raiz
+        for (char c = 'B'; c < (char) ('A' + this.profundidad); c++){
+            actual.izquierda = new Nodo(c);
+            actual = actual.izquierda;
+        }
