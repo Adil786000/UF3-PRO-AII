@@ -13,4 +13,13 @@ public class BinaryTree {
     return instances;
   }
 
+
+  public void createintTree(){
+    this.root = new Node(1);
+    Node current = this.root;
+    for (int i = 2; i <= this.depth; i++){
+        current.right = new Node(i);
+        current = current.right;
+  }
+
 }
