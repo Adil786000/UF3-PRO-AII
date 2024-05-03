@@ -9,5 +9,8 @@ public class BinaryTree {
     this.depth = depth;
   }
 
+  public static int getinstances(){
+    return instances;
+  }
 
 }
