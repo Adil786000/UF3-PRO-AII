@@ -32,6 +32,7 @@ public class ArbolBinario {
         for (char c = 'B'; c < (char) ('A' + this.profundidad); c++) {
             actual.izquierda = new Nodo(c);
             actual = actual.izquierda;
+            
         }
     }
 }
