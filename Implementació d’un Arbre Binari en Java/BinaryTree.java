@@ -4,5 +4,10 @@ public class BinaryTree {
   private Node root;
   private int depth;
 
+  public BinaryTree(int depth){
+    instances++;
+    this.depth = depth;
+  }
+
 
 }
