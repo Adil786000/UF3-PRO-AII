@@ -10,5 +10,15 @@ ArbolBinario.getInstancias());
         arbolEnteros1.crearArbolEnteros();
         arbolEnteros1.imprimirRamasDerechas();
 
-        
+        arbolEnteros2.crearArbolEnteros();
+        arbolEnteros2.imprimirRamasIzquierdas();
+
+       System.out.println("Instancias de Arboles creadas: " +
+ArbolBinario.getInstancias());
+
+        System.gc();
+
+        System.out.println("Instancias de Arboles creadas: " +
+ArbolBinario.getInstancias());
+        }
 }
