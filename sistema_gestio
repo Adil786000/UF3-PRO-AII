@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+
+class Libro {
+    private String titulo;
+
+    public Libro(String titulo) {
+        this.titulo = titulo;
+    }
