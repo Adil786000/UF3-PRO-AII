@@ -18,3 +18,18 @@ class Libro {
        return titulo;
    }
 }
+
+class ListaLibros<T extends Libro> {
+   private ArrayList<T> libros = new ArrayList<>();
+
+
+   public void agregarLibro(T libro) {
+       libros.add(libro);
+   }
+
+
+   public void eliminarLibro(T libro) {
+       libros.remove(libro);
+   }
+
+
