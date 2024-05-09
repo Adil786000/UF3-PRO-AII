@@ -48,6 +48,36 @@ class ListaLibros<T extends Libro> {
        }
    }
 }
- 
+
+ public class SistemaGestionLibros {
+   public static void main(String[] args) {
+       ListaLibros<Libro> listaNovela = new ListaLibros<>();
+       ListaLibros<Libro> listaCienciaFiccion = new ListaLibros<>();
+       ListaLibros<Libro> listaPoesia = new ListaLibros<>();
+
+
+       Libro libro1 = new Libro("Rana");
+       Libro libro2 = new Libro("Zayn");
+       Libro libro3 = new Libro("Pedro");
+
+
+       listaNovela.agregarLibro(libro1);
+       listaCienciaFiccion.agregarLibro(libro2);
+       listaPoesia.agregarLibro(libro3);
+
+
+       System.out.println("Libros de Novela:");
+       listaNovela.mostrarLibros();
+
+
+       System.out.println("\nLibros de Ciencia Ficción:");
+       listaCienciaFiccion.mostrarLibros();
+
+
+       System.out.println("\nLibros de Poesía:");
+       listaPoesia.mostrarLibros();
+   }
+}
+
 
 
