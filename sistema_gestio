@@ -32,4 +32,22 @@ class ListaLibros<T extends Libro> {
        libros.remove(libro);
    }
 
+      public T buscarLibro(String titulo) {
+       for (T libro : libros) {
+           if (libro.getTitulo().equals(titulo)) {
+               return libro;
+           }
+       }
+       return null;
+   }
+
+
+   public void mostrarLibros() {
+       for (T libro : libros) {
+           System.out.println(libro);
+       }
+   }
+}
+ 
+
 
