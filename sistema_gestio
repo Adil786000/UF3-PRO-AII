@@ -70,7 +70,7 @@ class ListaLibros<T extends Libro> {
        listaNovela.mostrarLibros();
 
 
-       System.out.println("\nLibros de Ciencia Ficción:");
+       System.out.println("\nLibros de Ciencia Ficcion:");
        listaCienciaFiccion.mostrarLibros();
 
 
